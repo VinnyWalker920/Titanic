@@ -1,6 +1,6 @@
 # 0,1,2 first,second,third class inner index 0,1,2 women,children,men
 classGenderTable = [
-    [.97, .86, .17],
+    [.97, .86, .32],
     [.86, 1, .08],
     [.49, .31, .13]
 ]
@@ -136,8 +136,3 @@ lifeBoatBreakdown = [
         "Lifeboat 20": .57
     }
 ]
-
-for i in lifeBoatBreakdown[0]:
-    print(i)
-    print(lifeBoatBreakdown[0][i])
-

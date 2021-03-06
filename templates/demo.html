@@ -1,10 +1,24 @@
 {% block content %}
-    <h2>{{info}}</h2>
-<ul name = "gener">
-    <btn> Male</btn>
-    <btn> Female</btn>
-    <btn> Child</btn>
-</ul>
+<h1>Demographics</h1>
+<h2>Status</h2>
+<form class ="form-inline" method="POST" action="{{url_for('demographics')}}">
+<label>Select Status:</label>
+    <select name="status" width="300px">
+        <option >Male</option>
+        <option >Female</option>
+        <option >Child</option>
+     </select>
+<br>
+<label>Select Class:</label>
+    <select name="class" width="300px">
+        <option >First Class</option>
+        <option >Second Class</option>
+        <option >Third Class</option>
+     </select>
+    <input type="submit" value="Select">
+</form>
 
-  </div>
+
+
+
 {% endblock content %}
