@@ -1,0 +1,20 @@
+{% block content %}
+    <h2>Chooser</h2>
+        <h3><table><form action="" method="POST">
+          <td>
+          <label>Select :</label>
+            <select name="option" width="300px">
+                <option name="SELECTED">select:</option>
+              {% for o in opts[cls] %}
+                <option name="SELECTED">{{ o }}</option>
+                {% endfor %}
+              </select>
+              </td>
+            <td>
+              <input type="submit" value="Select">
+            </td>
+
+        </form></table></h3>
+
+  </div>
+{% endblock content %}
